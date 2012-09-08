@@ -1,0 +1,102 @@
+<% provide(:title, '能力') %>
+<h1 style="font-size: 2em">个人能力</h1>
+
+<script src="js/jquery.tagcanvas.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    	$(function() {
+    		$( "#dialog" ).dialog({
+    			autoOpen: false,
+				modal: true,
+				buttons: {
+					Ok: function() {
+						$( this ).dialog( "close" );
+					}
+				}
+			});
+		});
+    	
+      $(document).ready(function() {
+        if(!$('#myCanvas').tagcanvas({
+          textColour: '#0099FF',
+          outlineColour: 'whiteSmoke',
+          reverse: true,
+          depth: 0.8,
+          maxSpeed: 0.05
+        },'tags')) {
+          // something went wrong, hide the canvas container
+          //$('#myCanvasContainer').hide();
+          $( "#dialog" ).dialog( "open" );
+        }
+        if(!$('#myCanvas2').tagcanvas({
+          textColour: '#FF0084',
+          outlineColour: 'whiteSmoke',
+          reverse: true,
+          depth: 0.8,
+          maxSpeed: 0.05
+        },'tags2')) {
+          // something went wrong, hide the canvas container
+          //$('#myCanvasContainer').hide();
+        }
+      });
+    </script>
+
+
+    <div id="myCanvasContainer" class="round" style="background-color:whiteSmoke;padding-left:140px;">
+      <canvas width="300" height="300" id="myCanvas" style="float:left;">
+      </canvas>
+      <canvas width="300" height="300" id="myCanvas2" style="margin-left:80px;">
+      </canvas>
+      
+      	<div id="tags">
+      	<ul>
+        	<li><a href="">Java EE</a></li>
+        	<li><a href="">JavaScript</a></li>
+        	<li><a href="">HTML</a></li>
+        	<li><a href="">CSS</a></li>
+        	<li><a href="">Appcelerator</a></li>
+        	<li><a href="">Ruby on Rails</a></li>
+        	<li><a href="">Google Maps API V3</a></li>
+        	<li><a href="">PHP</a></li>
+        	<li><a href="">SQL</a></li>
+        	<li><a href="">C</a></li>
+        	<li><a href="">C++</a></li>
+        	<li><a href="">C#</a></li>
+        	<li><a href="">Java</a></li>
+        	<li><a href="">OpenGL</a></li>
+        	<li><a href="">Photoshop</a></li>
+        	<li><a href="">Illustrator</a></li>
+        	<li><a href="">GlassFish</a></li>
+        	<li><a href="">Apache Tomcat</a></li>
+        	<li><a href="">Spring</a></li>
+        	<li><a href="">Hibernate</a></li>
+        	<li><a href="">Microsoft Office</a></li>
+        	<li><a href="">JSP</a></li>
+        	<li><a href="">JSF</a></li>
+        	<li><a href="">Servlet</a></li>
+      	</ul>
+    	</div>
+    	
+    	<div id="tags2">
+      	<ul>
+        	<li><a href="">英文</a></li>
+        	<li><a href="">汉语</a></li>
+        	<li><a href="">面向用户</a></li>
+        	<li><a href="">个人品牌</a></li>
+        	<li><a href="">团队合作</a></li>
+        	<li><a href="">归属感</a></li>
+        	<li><a href="">快速学习</a></li>
+        	<li><a href="">责任</a></li>
+        	<li><a href="">准时</a></li>
+        	<li><a href="">创造力</a></li>
+        	<li><a href="">影响力</a></li>
+        	<li><a href="">高效</a></li>
+      	</ul>
+    	</div>
+    	
+    </div>
+    
+    
+    <div id="dialog" title="浏览器不兼容">
+		<p>抱歉，您所使用的浏览器并不支持canvas element.</p> 
+		<p>请您使用chrome或safari或火狐浏览本网站。谢谢</p>
+	</div>

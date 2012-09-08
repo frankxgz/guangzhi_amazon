@@ -1,0 +1,290 @@
+@import "bootstrap";
+
+/* universal */
+
+html {
+  overflow-y: auto;
+}
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.left h1{
+  margin-bottom:20px;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.7em;
+  margin-bottom: 30px;
+  text-align: left;
+  font-weight: normal;
+  color: #999;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #fff;
+  color: #999;
+}
+
+footer a {
+  font-weight:bold;
+  color: #555;
+}  
+
+footer a:hover { 
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+/* Round corners */
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+.round_small {
+  -moz-border-radius:    5px;
+  -webkit-border-radius: 5px;
+  border-radius:         5px;
+}
+
+/*work*/
+div.work_container{
+  height:150px;
+  margin-bottom:15px;
+  padding:15px;
+  background-color:whiteSmoke;
+}
+
+div.work_photo{
+  position:relative;
+  float:left;
+  border:solid white 3px;
+  height:142px;
+  width:190px;
+}
+
+div.work_content{
+  position:relative;
+  float:right;
+  display:block;
+  white-space:break-word;
+  color:#000;
+  height:120px;
+  width:500px;
+  font-size:0.8em;
+}
+
+div.work_content h3{
+  color:#0073EA;
+  font-size: 1.8em;
+  margin-bottom:20px;
+  margin-top:10px;
+}
+
+div.work_content a {
+  color: #000;
+  text-decoration: none;
+}
+
+div.work_content a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+div.work_content a:visited {
+  color: #000;
+}
+
+/*education*/
+div.edu_left{
+  float:left;
+  width:60%;
+}
+
+div.edu_right{
+  float:right;
+  width:36%;
+}
+
+span.edu_year{
+  float:right;
+}
+
+li.edu_li{
+ margin-bottom:10px; 
+}
+
+/* img */
+.imageRow {
+  *zoom: 1;
+  margin: 20px 0;
+  margin-top:30px;
+}
+
+.imageRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.imageRow .single {
+  float: left;
+}
+
+.imageRow .single a {
+  float: left;
+  display: block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 7px;
+  line-height: 1em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  margin-right: 40px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.imageRow .set {
+  float: left;
+  background-color: #252525;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.imageRow .set:hover {
+  background: #252525;
+}
+
+.imageRow .set .single a {
+  background: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin-right: 0;
+}
+
+.imageRow .set .single a:hover {
+  background-color: #66CCFF;
+  -webkit-box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imageRow .set .single.first a {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -ms-border-top-left-radius: 4px;
+  -o-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -ms-border-bottom-left-radius: 4px;
+  -o-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.imageRow .set .single.last a {
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -ms-border-top-right-radius: 4px;
+  -o-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -ms-border-bottom-right-radius: 4px;
+  -o-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
