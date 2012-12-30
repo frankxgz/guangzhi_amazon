@@ -22,6 +22,7 @@ PersonalSite::Application.routes.draw do
   match '/about_cn', :to => 'chinese_pages#about_cn'
   match '/skills_cn', :to => 'chinese_pages#skill_cn'
   match '/hobbies_cn', :to => 'chinese_pages#hobbies_cn'
+   match '/projects_cn', :to => 'chinese_pages#projects'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
