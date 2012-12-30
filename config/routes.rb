@@ -12,6 +12,7 @@ PersonalSite::Application.routes.draw do
   match '/skills', :to => 'static_pages#skill'
   match '/hobbies', :to => 'static_pages#hobbies'
   match '/meecab', :to => 'static_pages#meecab'
+  match '/projects', :to => 'static_pages#projects'
 
   match '/test',    :to => 'static_pages#test'
   
